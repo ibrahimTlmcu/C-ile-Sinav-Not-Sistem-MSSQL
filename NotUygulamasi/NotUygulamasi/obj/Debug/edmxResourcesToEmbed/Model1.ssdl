@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NotKayitDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'NotKayitDB.dbo.TBL_DERS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TBL_DERS">
+    <Key>
+      <PropertyRef Name="OGRID" />
+    </Key>
+    <Property Name="OGRID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OGRNUMARA" Type="char" MaxLength="4" />
+    <Property Name="OGRAD" Type="nvarchar" MaxLength="50" />
+    <Property Name="OGRSOYAD" Type="nchar" MaxLength="50" />
+    <Property Name="OGRSINAV1" Type="tinyint" />
+    <Property Name="OGRSINAV2" Type="tinyint" />
+    <Property Name="OGRSINAV3" Type="tinyint" />
+    <Property Name="ORT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DURUM" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="NotKayitDBModelStoreContainer">
+    <EntitySet Name="TBL_DERS" EntityType="Self.TBL_DERS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TBL_DERS].[OGRID] AS [OGRID], 
+    [TBL_DERS].[OGRNUMARA] AS [OGRNUMARA], 
+    [TBL_DERS].[OGRAD] AS [OGRAD], 
+    [TBL_DERS].[OGRSOYAD] AS [OGRSOYAD], 
+    [TBL_DERS].[OGRSINAV1] AS [OGRSINAV1], 
+    [TBL_DERS].[OGRSINAV2] AS [OGRSINAV2], 
+    [TBL_DERS].[OGRSINAV3] AS [OGRSINAV3], 
+    [TBL_DERS].[ORT] AS [ORT], 
+    [TBL_DERS].[DURUM] AS [DURUM]
+    FROM [dbo].[TBL_DERS] AS [TBL_DERS]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

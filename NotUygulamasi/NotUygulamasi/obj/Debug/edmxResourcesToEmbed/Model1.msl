@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NotKayitDBModelStoreContainer" CdmEntityContainer="NotKayitDBEntities">
+    <EntitySetMapping Name="TBL_DERS">
+      <EntityTypeMapping TypeName="NotKayitDBModel.TBL_DERS">
+        <MappingFragment StoreEntitySet="TBL_DERS">
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRNUMARA" ColumnName="OGRNUMARA" />
+          <ScalarProperty Name="OGRAD" ColumnName="OGRAD" />
+          <ScalarProperty Name="OGRSOYAD" ColumnName="OGRSOYAD" />
+          <ScalarProperty Name="OGRSINAV1" ColumnName="OGRSINAV1" />
+          <ScalarProperty Name="OGRSINAV2" ColumnName="OGRSINAV2" />
+          <ScalarProperty Name="OGRSINAV3" ColumnName="OGRSINAV3" />
+          <ScalarProperty Name="ORT" ColumnName="ORT" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
