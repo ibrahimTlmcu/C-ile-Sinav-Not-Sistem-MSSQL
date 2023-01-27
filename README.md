@@ -1,1 +1,1 @@
-# C-ile-Sinav-Not-Sistem-MSSQL
+# C#-ile-Sinav-Not-Sistem-MSSQL
